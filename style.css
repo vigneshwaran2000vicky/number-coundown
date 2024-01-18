@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header h2{
+    padding: 18% 38%;
+    color: yellow;
+    animation: blink 1.5s linear infinite;
+    font-weight: bold;
+    font-size: 30px;
+}
+@keyframes blink {
+    
+    50%{
+        opacity: 0;
+
+    }
+}
+body{
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;position: fixed;
+}
+.continer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    color:white;
+    font-size: large;
+    text-align: center;
+    line-height: 20px;
+    background-color: navy;
+    border-radius: 20px;margin-top: 15%;
+    width: 100%;position: fixed;height: 35%;
+    border-top: 2px solid blueviolet;
+    border-bottom: 2px solid blueviolet;
+}
+.continer h4{
+    padding: 10px 0;animation: gg 3s ease-in-out;
+}
+@keyframes gg {
+    40%{
+        
+            transform: translateX(-20%);
+        } 
+        80%{
+        
+            transform: translateX(20%);
+        } 
+}
+.continer i{
+    font-size: 40px;padding: 10px 0;
+    animation: dd 3s ease-in-out ;
+}
+@keyframes dd {
+    40%{
+        
+            transform: translateX(100%);
+        }
+        80%{
+            transform: translateX(-100%);
+        }
+}
